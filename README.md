@@ -2,6 +2,10 @@
 
 Play the very popular rock paper scissors game using computer
 
+<img src='outputs/output.gif' idth = '800' alt='Game screen Video'>
+
+**Game Screenshots:**
+
 <img align = "left" src='outputs/image1.png' width="450" alt='Game screen 1'>
 <img src='outputs/image2.png' width="450" alt='Game screen 2'>
 <img align = "left" src='outputs/image3.png' width="450" alt='Game screen 3'>
