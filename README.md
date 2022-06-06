@@ -2,7 +2,10 @@
 
 Play the very popular rock paper scissors game using computer
 
-<img align="left" src='images/image1.png' width="400" alt='Game screen 1'>
+<img align = "left" src='outputs/image1.png' width="450" alt='Game screen 1'>
+<img src='outputs/image2.png' width="450" alt='Game screen 2'>
+<img align = "left" src='outputs/image3.png' width="450" alt='Game screen 3'>
+<img src='outputs/image4.png' width="450" alt='Game screen 4'>
 
 **Tools and Technology used:**
 - python
