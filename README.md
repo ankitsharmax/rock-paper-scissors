@@ -2,6 +2,8 @@
 
 Play the very popular rock paper scissors game using computer
 
+<img align="left" src='images/image1.png' width="400" alt='Game screen 1'>
+
 **Tools and Technology used:**
 - python
 - opencv
