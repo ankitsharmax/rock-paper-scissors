@@ -1,0 +1,5 @@
+mediapipe==0.8.9.1
+mysql-connector-python==8.0.27
+numpy==1.19.1
+opencv-contrib-python==4.2.0.34
+PyMySQL==1.0.2

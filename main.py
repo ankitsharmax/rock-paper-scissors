@@ -99,10 +99,11 @@ gameText = ""
 compText = ""
 res = True
 score = {"p":0,"c":0}
+max_num_hands = 1
 
 with mp_hands.Hands(
     model_complexity=0,
-    max_num_hands = 2,
+    max_num_hands = max_num_hands,
     min_detection_confidence=0.5,
     min_tracking_confidence=0.5) as hands:
   while cap.isOpened():
@@ -161,6 +162,8 @@ with mp_hands.Hands(
       
       cv2.putText(image,gameText,(170,50),cv2.FONT_HERSHEY_SIMPLEX, 1,
                   (0,255,255), 2, cv2.LINE_AA)
+    cv2.putText(image,"Press Q to exit",(50,450),cv2.FONT_HERSHEY_SIMPLEX, 1,
+                  (0,255,255), 2, cv2.LINE_AA)
     output = np.zeros((h,w*2,3),dtype='uint8')
     output[0:h,0:w] = image
     if compText == "rock":
@@ -198,8 +201,10 @@ with mp_hands.Hands(
           print("Connection Error")
       if score["p"] > score["c"]:
           print("Player Won!!")
-      else:
+      elif score["p"] < score["c"]:
           print("Computer Won!!")
+      else:
+          print("Game Draw")
       break
 cap.release()
 cv2.destroyAllWindows()
